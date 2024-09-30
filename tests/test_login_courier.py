@@ -33,14 +33,13 @@ class TestLoginCourier:
             assert response.json().get("message") == "Недостаточно данных для входа", \
                 f"Ожидалось сообщение 'Недостаточно данных для входа', но получено {response.json().get('message')}"
 
-    @allure.title("Авторизация без пароля (!!!БАГ!!!)")
+    @allure.title("Авторизация без пароля")
     @allure.description("Проверка, что запрос без пароля возвращает ошибку")
-    @pytest.mark.xfail()
     def test_login_missing_password(self, courier_data):
         login, _, first_name = courier_data
 
         with allure.step(f"Попытка авторизации без пароля, но с логином: {login} и именем: {first_name}"):
-            response = requests.post(LOGIN_URL, json={"login": login})
+            response = requests.post(LOGIN_URL, json={"login": login, "password": "", "first_name": first_name})
 
         with allure.step("Проверка ошибки при авторизации без пароля"):
             assert response.status_code == 400, f"Ожидаемый статус 400, но получен {response.status_code}"
