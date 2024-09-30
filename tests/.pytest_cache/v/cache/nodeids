@@ -1,0 +1,19 @@
+[
+  "test_create_courier.py::TestCourier::test_create_courier_missing_first_name",
+  "test_create_courier.py::TestCourier::test_create_courier_missing_login",
+  "test_create_courier.py::TestCourier::test_create_courier_missing_password",
+  "test_create_courier.py::TestCourier::test_create_courier_success",
+  "test_create_courier.py::TestCourier::test_create_duplicate_courier",
+  "test_create_order.py::TestCreateOrder::test_create_order_with_colors[color0]",
+  "test_create_order.py::TestCreateOrder::test_create_order_with_colors[color1]",
+  "test_create_order.py::TestCreateOrder::test_create_order_with_colors[color2]",
+  "test_create_order.py::TestCreateOrder::test_create_order_with_colors[color3]",
+  "test_list_of_orders.py::TestListOfOrders::test_get_all_orders",
+  "test_list_of_orders.py::TestListOfOrders::test_get_all_orders_for_created_courier",
+  "test_login_courier.py::TestLoginCourier::test_courier_can_login",
+  "test_login_courier.py::TestLoginCourier::test_login_missing_login",
+  "test_login_courier.py::TestLoginCourier::test_login_missing_password",
+  "test_login_courier.py::TestLoginCourier::test_login_non_existent_user",
+  "test_login_courier.py::TestLoginCourier::test_login_with_invalid_login",
+  "test_login_courier.py::TestLoginCourier::test_login_with_invalid_password"
+]
